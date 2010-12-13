@@ -1,0 +1,10 @@
+[user]
+	name = alistair
+	email = alistair@stumbleupon.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[core]
+	excludesfile = /home/alistair/.gitignore
+	editor = vi
