@@ -50,7 +50,7 @@ if [ "$TERM" != "dumb" ]; then
 
   local prompt_user="%(!.$c_lred.$c_lgreen)%n$c_none"
   local prompt_host="%(!.$c_lred.$c_lgreen)%m$c_none"
-  local prompt_host="$c_lyellow%m$c_none"
+  #local prompt_host="$c_lyellow%m$c_none"
   local prompt_cwd="$c_lwhite%40<..<%~%<<$c_none"
   local prompt_time="$c_blue%*$c_none"
   local prompt_ecode="%(?..$c_lred%?$c_none )"
