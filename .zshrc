@@ -54,9 +54,9 @@ if [ "$TERM" != "dumb" ]; then
   local prompt_cwd="$c_lwhite%40<..<%~%<<$c_none"
   local prompt_time="$c_blue%*$c_none"
   local prompt_ecode="%(?..$c_lred%?$c_none )"
- 
-#  PROMPT="$prompt_host:$prompt_cwd %# "
-  PROMPT="$prompt_user%B@%b$prompt_host:$prompt_cwd %# "
+
+  PROMPT="$prompt_host:$prompt_cwd %# "
+# PROMPT="$prompt_user%B@%b$prompt_host:$prompt_cwd %# "
   RPROMPT="$prompt_ecode$prompt_time"
 fi
 
@@ -68,6 +68,8 @@ export JAVA_HOME=/usr/lib/jvm/java-6-sun
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/cuda/lib
 export PYTHONPATH=$PYTHONPATH:$HOME/gsutil/boto
 export alexko=1329486
+export yetibear012=5173507
+
 unset http_proxy
 
 # aliases
@@ -86,8 +88,6 @@ alias mk_cm='for h in face dev sun alex1; do ssh -MNf $h; done'
 alias rm_cm='pkill -f "ssh -MNf"'
 alias relcom='f=(~/.zsh/*(.)); unfunction $f:t; autoload -U ~/.zsh/*(:t)'
 
-umask 0066
+umask 0022
 
 [ -r ~/.zshrc.local ] && source ~/.zshrc.local
-[ -x /usr/bin/calendar ] && /usr/bin/calendar
-
