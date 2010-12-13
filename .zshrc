@@ -88,6 +88,9 @@ alias mk_cm='for h in face dev sun alex1; do ssh -MNf $h; done'
 alias rm_cm='pkill -f "ssh -MNf"'
 alias relcom='f=(~/.zsh/*(.)); unfunction $f:t; autoload -U ~/.zsh/*(:t)'
 
+#functions
+emacs () { /usr/bin/emacs $* 2>/dev/null & }
+
 umask 0022
 
 [ -r ~/.zshrc.local ] && source ~/.zshrc.local
