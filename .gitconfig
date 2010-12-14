@@ -17,3 +17,5 @@
   lp = log -p
   who = shortlog -s --
   sub = submodule
+  undoci = reset --soft HEAD^
+  dump = reset --hard HEAD
