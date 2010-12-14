@@ -8,3 +8,12 @@
 [core]
 	excludesfile = /home/alistair/.gitignore
 	editor = vi
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  lp = log -p
+  who = shortlog -s --
+  sub = submodule
