@@ -1,13 +1,13 @@
 [user]
-	name = alistair
-	email = alistair@stumbleupon.com
+	name = user
+	email = user@user.com
 [color]
 	diff = auto
 	status = auto
 	branch = auto
 [core]
-	excludesfile = /home/alistair/.gitignore
 	editor = vim
+	excludesfile = ~/.gitignore
 [alias]
   st = status
   ci = commit
@@ -18,4 +18,5 @@
   who = shortlog -s --
   sub = submodule
   undoci = reset --soft HEAD^
-  dump = reset --hard HEAD
+  dump = reset --hard HEAD^
+  unstage = reset HEAD
