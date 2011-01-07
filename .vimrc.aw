@@ -9,6 +9,8 @@ set nobackup
 set noswapfile
 set hidden
 set ruler
+
+
 set incsearch
 set virtualedit=all
 set showmatch
@@ -23,7 +25,12 @@ nnoremap ; :
 let mapleader = ","
 
 "disable arrow keys for the most part
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
+"map <up> <nop>
+map <up> <Esc>:tabfirst<CR>
+map <down> <Esc>:tablast<CR>
+map <left> <Esc>:tabp<CR>
+map <right> <Esc>:tabn<CR>
+
+imap ii <Esc>
+hi Comment      ctermfg=darkcyan
+"remap arrow keys to tab switching
