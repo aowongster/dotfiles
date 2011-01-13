@@ -1,4 +1,8 @@
-# name of prog cuda, boiler similar to c
+/**
+* File Name:
+* Created:
+* Modified:
+**/
 
 #include <stdio.h>
 #include <stdlib.h>

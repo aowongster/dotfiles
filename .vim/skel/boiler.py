@@ -1,7 +1,7 @@
 #!/usr/bin/python
-
-#name of program
-# what it does
+# File Name:
+# Created:
+# Modified:
 
 def main():
   """main func"""
