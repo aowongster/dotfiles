@@ -26,6 +26,7 @@ let mapleader = ","
 
 "disable arrow keys for the most part
 "map <up> <nop>
+"remap arrow keys to tab switching
 map <up> <Esc>:tabfirst<CR>
 map <down> <Esc>:tablast<CR>
 map <left> <Esc>:tabp<CR>
@@ -33,4 +34,6 @@ map <right> <Esc>:tabn<CR>
 
 imap ii <Esc>
 hi Comment      ctermfg=darkcyan
-"remap arrow keys to tab switching
+
+"enabling skel docs
+autocmd! BufNewFile * silent! 0r ~/.vim/skel/boiler.%:e
