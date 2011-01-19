@@ -10,7 +10,6 @@ set noswapfile
 set hidden
 set ruler
 
-
 set incsearch
 set virtualedit=all
 set showmatch
@@ -46,4 +45,10 @@ autocmd BufNewFile * silent! 0r ~/.vim/skel/boiler.%:e
 autocmd BufNewFile,BufRead * silent! exe "1," . 10 . "g/File Name:.*/s//File Name: ".expand("%")
 autocmd BufNewFile * silent! exe "1," . 10 . "g/Created:.*/s//Created:   " .strftime("%d-%m-%Y")
 autocmd Bufwritepre,filewritepre * silent! exe "1," . 10 . "g/Modified:.*/s//Modified:  " .strftime("%c")
-     
+
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
