@@ -48,4 +48,11 @@ autocmd BufNewFile * silent! exe "1," . 10 . "g/Created:.*/s//Created:   " .strf
 autocmd BufWritePre,filewritepre * silent! :normal ma
 
 autocmd Bufwritepre,filewritepre * silent! exe "1," . 10 . "g/Modified:.*/s//Modified:  " .strftime("%c")
-autocmd bufwritepost,filewritepost * silent! :'a     
+autocmd bufwritepost,filewritepost * silent! :'a
+
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
