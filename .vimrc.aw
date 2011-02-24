@@ -44,9 +44,9 @@ autocmd BufNewFile * silent! 0r ~/.vim/skel/boiler.%:e
 " header fill in
 autocmd BufNewFile,BufRead * silent! exe "1," . 10 . "g/File Name:.*/s//File Name: ".expand("%")
 autocmd BufNewFile * silent! exe "1," . 10 . "g/Created:.*/s//Created:   " .strftime("%d-%m-%Y")
-autocmd BufWritePre,filewritepre * silent! :normal ma
-autocmd Bufwritepre,filewritepre * silent! exe "1," . 10 . "g/Modified:.*/s//Modified:  " .strftime("%c")
-autocmd bufwritepost,filewritepost * silent! :'a
+" autocmd BufWritePre,filewritepre * silent! :normal ma
+" autocmd Bufwritepre,filewritepre * silent! exe "1," . 10 . "g/Modified:.*/s//Modified:  " .strftime("%c")
+" autocmd bufwritepost,filewritepost * silent! :'a
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/

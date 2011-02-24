@@ -1,10 +1,11 @@
 #!/usr/bin/python
-# File Name:
+# File Name: boiler.py
 # Created:
-# Modified:
 
-def main():
+import sys
+
+def main(argv):
   """main func"""
 
 if __name__ == "__main__":
-  main()
+  sys.exit(main(sys.argv))
