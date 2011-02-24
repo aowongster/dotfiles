@@ -78,6 +78,8 @@ alias la='ls -A'
 alias l='ls -CF'
 alias g=grep
 alias m=less
+source ~/.aliases
+
 #alias m=make
 alias e='emacs -nw'
 alias xml=xmlstarlet
