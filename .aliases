@@ -7,4 +7,7 @@ alias vw='view'
 alias v='vim'
 alias vi='vim'
 alias iost='iostat -xkd 1'
+alias aliases='alias'
+alias got='git'
+alias gut='git'
 
