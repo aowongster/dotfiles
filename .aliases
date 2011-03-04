@@ -10,4 +10,4 @@ alias iost='iostat -xkd 1'
 alias aliases='alias'
 alias got='git'
 alias gut='git'
-
+alias screens='screen -ls'
