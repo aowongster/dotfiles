@@ -20,6 +20,7 @@ done
 
 git config --global user.name "$user"
 git config --global user.email $email
+git config --global core.editor vim
 
 # assuming we are using bash or some other shell
 test $SHELL = 'bash' && source ~/.bashrc && echo sourcing bashrc
