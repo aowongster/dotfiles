@@ -1,9 +1,11 @@
-
 # alias list .aliases
 alias aliases='alias'
+alias hk='alias'
+alias sc='alias'
 
 alias ll='ls -l'
 alias la='ls -la'
+alias df='df -h'
 alias pg='pgrep -lf'
 alias iost='iostat -xkd 1'
 alias screens='screen -ls'
@@ -14,6 +16,9 @@ alias vi='vim'
 alias vw='view'
 
 # git
+alias gt='git'
 alias got='git'
 alias gut='git'
 alias gitconf='git config --list | less'
+alias gitconfig='git config --list | less'
+alias gitalias="git config --list | grep alias | sed 's/alias\./git /'"
