@@ -1,13 +1,19 @@
 
-# for use with bash or zsh or any other shell?
+# alias list .aliases
+alias aliases='alias'
+
 alias ll='ls -l'
 alias la='ls -la'
 alias pg='pgrep -lf'
-alias vw='view'
+alias iost='iostat -xkd 1'
+alias screens='screen -ls'
+
+# vim
 alias v='vim'
 alias vi='vim'
-alias iost='iostat -xkd 1'
-alias aliases='alias'
+alias vw='view'
+
+# git
 alias got='git'
 alias gut='git'
-alias screens='screen -ls'
+alias gitconf='git config --list | less'
