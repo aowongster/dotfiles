@@ -7,7 +7,7 @@
 	branch = auto
 [core]
 	excludesfile = /home/alistair/.gitignore
-	editor = vi
+	editor = vim
 [alias]
   st = status
   ci = commit
