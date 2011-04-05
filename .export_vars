@@ -1,0 +1,3 @@
+PATH=${PATH}:~/.vim/ctags:~/bin
+
+export PATH

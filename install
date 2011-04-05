@@ -2,14 +2,14 @@
 
 # need to prompt name and email for global git
 # take in some params for git global config
-echo "Enter your username (Git)"
-read user
+# echo "Enter your username (Git)"
+# read user
 
-echo "Enter your email (Git)"
-read email
+# echo "Enter your email (Git)"
+# read email
 
 # symlink dotfiles
-for f in .zsh .zshrc .screenrc .vimrc .vim .emacs.d .aliases .gitconfig .gitignore
+for f in .zsh .zshrc .screenrc .vimrc .vim .emacs.d .aliases .export_vars .gitconfig .gitignore
 do
   [ ~/$f -ef $(pwd)/$f ] || {
     echo symlinking $f
@@ -18,8 +18,8 @@ do
   }
 done
 
-git config --global user.name "$user"
-git config --global user.email $email
+# git config --global user.name "$user"
+# git config --global user.email $email
 git config --global core.editor vim
 
 # assuming we are using bash or some other shell

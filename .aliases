@@ -9,6 +9,7 @@ alias df='df -h'
 alias pg='pgrep -lf'
 alias iost='iostat -xkd 1'
 alias screens='screen -ls'
+alias freq="history | awk '{a[$2]++}END{for(i in a){print a[i] i}}' | sort -rn | head"
 
 # vim
 alias v='vim'
