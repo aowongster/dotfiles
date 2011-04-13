@@ -3,6 +3,8 @@ alias aliases='alias'
 alias hk='alias'
 alias sc='alias'
 
+alias md='mkdir'
+alias rd='rmdir'
 alias ll='ls -l'
 alias la='ls -la'
 alias df='df -h'
@@ -20,6 +22,8 @@ alias vw='view'
 alias gt='git'
 alias got='git'
 alias gut='git'
+alias gti='git'
+
 alias gitconf='git config --list | less'
 alias gitconfig='git config --list | less'
 alias gitalias="git config --list | grep alias | sed 's/alias\./git /'"
