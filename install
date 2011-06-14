@@ -9,7 +9,9 @@
 # read email
 
 # symlink dotfiles
-for f in .zsh .zshrc .screenrc .vimrc .vim .emacs.d .aliases .export_vars .gitconfig .gitignore
+# for f in .zsh .zshrc .screenrc .vimrc .vim .emacs.d .aliases .export_vars .gitconfig .gitignore
+# for f in .zsh .zshrc .screenrc .vimrc .vim .emacs.d
+for f in .screenrc .vimrc .vim .emacs.d .aliases .bashrc .gitconfig .gitignore
 do
   [ ~/$f -ef $(pwd)/$f ] || {
     echo symlinking $f

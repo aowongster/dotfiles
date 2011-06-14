@@ -52,10 +52,11 @@
  '(js2-idle-timer-delay 1)
  '(mac-option-modifier (quote super))
  '(mark-even-if-inactive t)
- ;; '(nxhtml-default-encoding (quote utf-8))
- ;; '(nxhtml-global-minor-mode t nil (nxhtml-menu))
- ;; '(nxhtml-script-completion-pattern "\\.\\(?:js\\|js\\.erb\\)$")
- ;; '(nxhtml-skip-welcome t)
+ '(org-babel-tangle-lang-exts (quote (("python" . "py") ("emacs-lisp" . "el"))))
+ '(org-babel-do-load-languages
+     org-babel-load-languages
+     '((python . t)
+     ))
  '(predictive-mode t)
  '(read-file-name-completion-ignore-case t)
  '(recentf-exclude (quote ("/[^/]+@[^/]+:.*")))

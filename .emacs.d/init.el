@@ -25,6 +25,7 @@
 (setq dotfiles-dir (file-name-directory
                     (or (buffer-file-name) load-file-name)))
 
+
 (add-to-list 'load-path dotfiles-dir)
 (add-to-list 'load-path (concat dotfiles-dir "/elpa-to-submit"))
 (add-to-list 'load-path (concat dotfiles-dir "/elpa-to-submit/jabber"))
@@ -94,4 +95,16 @@
   (mapc #'load (directory-files user-specific-dir nil ".*el$")))
   
 (require 'tim-custom)
+
+;; woohoo this works! need to setup language specifics
+(add-to-list 'load-path "/Users/alistair/org-7.5/lisp")
+(require 'org-install)
+(add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
+(define-key global-map "\C-cl" 'org-store-link)
+(define-key global-map "\C-ca" 'org-agenda)
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((python . t)
+  ))
+(setq org-log-done t)
 ;;; init.el ends here
