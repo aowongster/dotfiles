@@ -93,11 +93,12 @@
 (if (file-exists-p user-specific-config) (load user-specific-config))
 (if (file-exists-p user-specific-dir)
   (mapc #'load (directory-files user-specific-dir nil ".*el$")))
-  
+
 (require 'tim-custom)
+(require 'alistair-custom)
 
 ;; woohoo this works! need to setup language specifics
-(add-to-list 'load-path "/Users/alistair/org-7.5/lisp")
+(add-to-list 'load-path "~/org-7.5/lisp")
 (require 'org-install)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 (define-key global-map "\C-cl" 'org-store-link)
