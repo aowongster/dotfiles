@@ -1,5 +1,6 @@
 set nocompatible
 syntax on
+colorscheme darkblue
 
 set tabstop=2
 set shiftwidth=2
