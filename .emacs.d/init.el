@@ -121,8 +121,11 @@
    (R . t)
    (haskell . t)
   ))
+(setq org-confirm-babel-evaluate nil) ;; disable confirmation
 (setq org-log-done t)
+(setq visible-bell nil) ;; disable square block
 
-(require 'tim-custom)
-(require 'alistair-custom)
+;; for now comment out custom shiz
+;; (require 'tim-custom)
+;; (require 'alistair-custom)
 ;;; init.el ends here
