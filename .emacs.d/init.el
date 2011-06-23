@@ -94,8 +94,6 @@
 (if (file-exists-p user-specific-dir)
   (mapc #'load (directory-files user-specific-dir nil ".*el$")))
 
-(require 'tim-custom)
-(require 'alistair-custom)
 
 ;; MY PACKAGES MAYBE I SHOULD PUT IN CUSTOM.el
 ;; path to color-theme folder .. may need to rename
@@ -124,4 +122,7 @@
    (haskell . t)
   ))
 (setq org-log-done t)
+
+(require 'tim-custom)
+(require 'alistair-custom)
 ;;; init.el ends here
