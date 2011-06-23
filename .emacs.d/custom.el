@@ -53,10 +53,6 @@
  '(mac-option-modifier (quote super))
  '(mark-even-if-inactive t)
  '(org-babel-tangle-lang-exts (quote (("python" . "py") ("emacs-lisp" . "el"))))
- '(org-babel-do-load-languages
-     org-babel-load-languages
-     '((python . t)
-     ))
  '(predictive-mode t)
  '(read-file-name-completion-ignore-case t)
  '(recentf-exclude (quote ("/[^/]+@[^/]+:.*")))
@@ -78,8 +74,6 @@
  '(visible-bell t)
  '(x-select-enable-clipboard t)
  '(yaml-indent-offset 2))
- 
-
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.

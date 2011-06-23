@@ -31,13 +31,6 @@
 (add-to-list 'load-path (concat dotfiles-dir "/elpa-to-submit/jabber"))
 (add-to-list 'load-path (concat dotfiles-dir "/vendor"))
 
-;; path to color-theme folder .. may need to rename
-(add-to-list 'load-path "~/color-theme")
-(require 'color-theme)
-(eval-after-load "color-theme"
-  '(progn
-     (color-theme-initialize)
-     (color-theme-hober)))
 
 (setq autoload-file (concat dotfiles-dir "loaddefs.el"))
 (setq package-user-dir (concat dotfiles-dir "elpa"))
@@ -87,7 +80,6 @@
 (require 'mrflip-bindings)
 (require 'setup-erc)
 
-
 (regen-autoloads)
 (load custom-file 'noerror)
 
@@ -105,15 +97,31 @@
 (require 'tim-custom)
 (require 'alistair-custom)
 
-;; woohoo this works! need to setup language specifics
-(add-to-list 'load-path "~/org-7.5/lisp")
+;; MY PACKAGES MAYBE I SHOULD PUT IN CUSTOM.el
+;; path to color-theme folder .. may need to rename
+(add-to-list 'load-path "~/lib/color-theme")
+(require 'color-theme)
+(eval-after-load "color-theme"
+  '(progn
+     (color-theme-initialize)
+     (color-theme-calm-forest)))
+;; hober, euphoria,
+
+(load "~/lib/haskell-mode/haskell-site-file")
+;; loads last overwrites everything
+(add-to-list 'load-path "~/lib/org-7.5/lisp")
 (require 'org-install)
+;; (require 'ob-sh)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((python . t)
+   (C .t)
+   (sh . t)
+   (R . t)
+   (haskell . t)
   ))
 (setq org-log-done t)
 ;;; init.el ends here
