@@ -125,6 +125,16 @@
 (setq org-log-done t)
 (setq visible-bell nil) ;; disable square block
 
+;; (setq split-height-threshold nil)
+;; (setq split-width-threshold 0)
+(require 'desktop)
+(desktop-save-mode 1)
+(defun my-desktop-save ()
+  (interactive)
+  (if (eq (desktop-owner) (emacs-pid))
+    (desktop-save desktop-dirname)))
+  (add-hook 'auto-save-hook 'my-desktop-save)
+
 ;; for now comment out custom shiz
 ;; (require 'tim-custom)
 ;; (require 'alistair-custom)
