@@ -15,6 +15,8 @@ alias freq="history | awk '{a[$2]++}END{for(i in a){print a[i] i}}' | sort -rn |
 
 alias ssh='ssh -X' # LOL
 
+alias py='python'
+
 # vim
 alias v='vim'
 alias vi='vim'
