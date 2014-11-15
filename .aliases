@@ -31,3 +31,7 @@ alias gti='git'
 alias gitconf='git config --list | less'
 alias gitconfig='git config --list | less'
 alias gitalias="git config --list | grep alias | sed 's/alias\./git /'"
+alias x='exercism'
+alias xs='exercism submit'
+alias xf='exercism fetch'
+alias xfp='exercism fetch python'
