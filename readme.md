@@ -15,8 +15,5 @@
 .zsh/
 .zshrc
 
-# TODO
-# fix git config stuff
-# automate export vars and creating .export_vars
 =======
 A collection of my dotfiles to make setups across boxes smoother.

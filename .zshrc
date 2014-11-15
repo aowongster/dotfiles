@@ -10,7 +10,6 @@ path=(~/bin /usr/local/cuda/bin ~/android/android-sdk-linux_86 ~/bin/gsutil $JAV
 fpath=(~/.zsh $fpath)
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/alkos/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -64,14 +63,9 @@ export LUA_INIT=@$HOME/bin/init.lua
 export PAGER=less
 export EDITOR=vim
 export JAVA_HOME=/usr/lib/jvm/java-6-sun
-#export PATH=$PATH:/usr/local/cuda/bin:$JAVA_HOME/bin:$HOME/android/android-sdk-linux_86:$HOME/bin/gsutil
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/cuda/lib
 export PYTHONPATH=$PYTHONPATH:$HOME/gsutil/boto
-export alexko=1329486
-export yetibear012=5173507
 
 unset http_proxy
-
 # aliases
 alias ll='ls -l'
 alias la='ls -A'
@@ -82,12 +76,8 @@ source ~/.aliases
 
 #alias m=make
 alias e='emacs -nw'
-alias xml=xmlstarlet
-alias adb="/home/alkos/android/android-sdk-linux_86/tools/adb -d"
 function dupscreen { screen bash -c "cd \"$PWD\" && exec $SHELL --login" }
 alias ,d=dupscreen
-alias mk_cm='for h in face dev sun alex1; do ssh -MNf $h; done'
-alias rm_cm='pkill -f "ssh -MNf"'
 alias relcom='f=(~/.zsh/*(.)); unfunction $f:t; autoload -U ~/.zsh/*(:t)'
 
 #functions
