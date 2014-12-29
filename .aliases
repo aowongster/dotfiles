@@ -31,3 +31,15 @@ alias gti='git'
 alias gitconf='git config --list | less'
 alias gitconfig='git config --list | less'
 alias gitalias="git config --list | grep alias | sed 's/alias\./git /'"
+
+# alias -s suffix matching
+# alias -g global searching
+
+alias lyn="learnyounode"
+alias aliases="alias"
+alias sa="stream-adventure"
+alias x='exercism'
+alias xfp='exercism fetch python'
+alias xs='exercism submit'
+alias gobjc='gcc `gnustep-config --objc-flags` -Wl,--no-as-needed -lgnustep-base'
+alias sub='sublime-text &'
