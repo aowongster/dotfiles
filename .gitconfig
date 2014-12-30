@@ -20,5 +20,3 @@
   undoci = reset --soft HEAD^
   dump = reset --hard HEAD^
   unstage = reset HEAD
-[push]
-	default = simple
