@@ -20,3 +20,5 @@
   undoci = reset --soft HEAD^
   dump = reset --hard HEAD^
   unstage = reset HEAD
+[url "https://"]
+	insteadOf = git://

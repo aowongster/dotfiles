@@ -48,6 +48,9 @@ autocmd BufNewFile * silent! exe "1," . 10 . "g/Created:.*/s//Created:   " .strf
 " autocmd BufWritePre,filewritepre * silent! :normal ma
 " autocmd Bufwritepre,filewritepre * silent! exe "1," . 10 . "g/Modified:.*/s//Modified:  " .strftime("%c")
 " autocmd bufwritepost,filewritepost * silent! :'a
+au BufNewFile,BufRead *.handlebars set filetype=html
+au BufNewFile,BufRead *.hbs set filetype=html
+
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
