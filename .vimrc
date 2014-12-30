@@ -51,6 +51,8 @@ autocmd BufNewFile * silent! exe "1," . 10 . "g/Created:.*/s//Created:   " .strf
 au BufNewFile,BufRead *.handlebars set filetype=html
 au BufNewFile,BufRead *.hbs set filetype=html
 
+" autocmd BufWritePost *.rb !ruby -c <afile>
+" autocmd BufWritePost *.js !jshint <afile>
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
